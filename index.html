@@ -2,10 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=git, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+   <section class="container">
+    <div class="box" id="TODO">
+        <div class="title-container">
+            <p class="title">TO DO 2 issues</p>
+            <span class="material-icons dots">more_horiz</span>
+        </div>
+        <button id="creat-issue">
+            <span class="material-icons">add</span>
+            <span>Creat Issue</span>
+        </button>  
+    </div>
+    <div class="box" id="IN_PROGRESS">
+        <div class="title-container">
+            <p class="title">In progress</p>
+            <span class="material-icons dots">more_horiz</span>
+        </div>
+    </div>
+    <div class="box" id="COMPLETED">
+        <div class="title-container">
+            <p class="title">Completed</p>
+            <span class="material-icons dots">more_horiz</span>
+        </div>
+    </div>
+   </section>
+   <script>
+    let draggedelement=null;
+   </script>
+    <script src="./script.js"></script>
 </body>
 </html>
